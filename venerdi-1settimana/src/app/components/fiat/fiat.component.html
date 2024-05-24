@@ -1,0 +1,63 @@
+<div class="container-fluid">
+  <div class="row">
+    <div
+      class="d-flex align-items-center flex-column bg-grey py-4 px-4 le-nostre mt-3"
+    >
+      <h1>Le nostre {{ brand }}</h1>
+      <img src="{{ brandLogo }}" style="width: 10em" />
+      <div class="mt-4">
+        <p class="fst-italic fs-4">
+          Stile italiano, versatilità e innovazione. Le Fiat sono sinonimo di
+          stile italiano, innovazione e praticità. Progettate per offrire
+          un'esperienza di guida piacevole e conveniente, le vetture Fiat si
+          distinguono per il loro design iconico, la tecnologia avanzata e la
+          versatilità. Dalla compatta e amata 500, perfetta per la città, alla
+          spaziosa e familiare Tipo, passando per il versatile SUV 500X e il
+          dinamico Panda, Fiat offre una gamma di modelli adatti a ogni
+          esigenza. Ogni Fiat è costruita con una attenzione particolare ai
+          dettagli e una passione per la qualità, rendendo ogni viaggio
+          un'esperienza unica. Con Fiat, la tua mobilità quotidiana diventa
+          un'esperienza di stile e innovazione.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div
+      class="col-12 d-flex justify-content-center mb-3"
+      *ngFor="let auto of autos"
+    >
+      <div
+        class="card"
+        style="width: 50em"
+        [ngClass]="{
+          'bg-success': auto.available,
+          'bg-danger': !auto.available
+        }"
+      >
+        <img
+          src="{{ auto.modelImage }}"
+          class="card-img-top"
+          alt="{{ auto.brand }} {{ auto.model }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title h2">{{ auto.brand }} - {{ auto.model }}</h5>
+          <p class="card-text h4">
+            <span class="badge me-1 text-uppercase">Anno: {{ auto.year }}</span>
+            <span class="badge me-1 text-uppercase"
+              >Prezzo: {{ auto.price }}</span
+            >
+            <span
+              *ngIf="auto.available; else elseSpan"
+              class="badge me-1 text-uppercase"
+              >Pronta consegna: sì</span
+            >
+            <ng-template #elseSpan>
+              <span class="badge me-1 text-uppercase">Pronta consegna: no</span>
+            </ng-template>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

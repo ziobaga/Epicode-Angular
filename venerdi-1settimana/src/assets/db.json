@@ -1,0 +1,56 @@
+[
+  {
+    "brand": "Fiat",
+    "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/768px-Logo_della_Fiat.svg.png",
+    "model": "500L",
+    "modelImage": "https://www.kimballstock.com/pix/car/p/06/aut-51-iz0279-01p.jpg",
+    "year": 2015,
+    "price": 7500,
+    "available": false
+  },
+  {
+    "brand": "Fiat",
+    "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/768px-Logo_della_Fiat.svg.png",
+    "model": "500 Abarth",
+    "modelImage": "https://www.kimballstock.com/pix/car/p/06/aut-51-iz0251-01p.jpg",
+    "year": 2010,
+    "price": 3500,
+    "available": true
+  },
+  {
+    "brand": "Ford",
+    "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ford-Motor-Company-Logo.png",
+    "model": "Taurus",
+    "modelImage": "https://www.kimballstock.com/pix/car/p/01/aut-15-iz0613-01p.jpg",
+    "year": 2009,
+    "price": 5200,
+    "available": false
+  },
+  {
+    "brand": "Ford",
+    "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ford-Motor-Company-Logo.png",
+    "model": "Focus",
+    "modelImage": "https://www.kimballstock.com/pix/car/p/05/aut-50-iz0343-01p.jpg",
+    "year": 2014,
+    "price": 9700,
+    "available": true
+  },
+  {
+    "brand": "Audi",
+    "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/640px-Audi-Logo_2016.svg.png",
+    "model": "A3",
+    "modelImage": "https://www.kimballstock.com/pix/car/p/02/aut-15-iz0868-01p.jpg",
+    "year": 2012,
+    "price": 4300,
+    "available": true
+  },
+  {
+    "brand": "Audi",
+    "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/640px-Audi-Logo_2016.svg.png",
+    "model": "Q7",
+    "modelImage": "https://www.kimballstock.com/pix/car/p/06/aut-51-iz0124-01p.jpg",
+    "year": 2020,
+    "price": 41700,
+    "available": false
+  }
+]

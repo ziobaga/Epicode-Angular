@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-flex align-items-center flex-column le-nostre py-4 px-4 mt-3">
+      <h1>Le nostre {{ brand }}</h1>
+      <img src="{{ brandLogo }}" style="width: 10em" />
+      <div class="mt-4">
+        <p class="fst-italic fs-4">
+          Eleganza senza tempo, prestazioni straordinarie. Le Audi rappresentano
+          il perfetto connubio tra design sofisticato, tecnologia
+          all'avanguardia e prestazioni dinamiche. Ogni modello Audi è
+          progettato per offrire un'esperienza di guida unica, grazie a motori
+          potenti, sistemi di sicurezza avanzati e un comfort senza pari. La
+          cura per i dettagli e la qualità dei materiali rendono ogni viaggio
+          un'esperienza di lusso. Dalla compatta A3 alla maestosa A8, passando
+          per i versatili SUV Q-series e le sportive RS, Audi offre una gamma di
+          veicoli in grado di soddisfare anche i clienti più esigenti. Con Audi,
+          ogni strada è un'opera d'arte.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div
+      class="col-12 d-flex justify-content-center mb-3"
+      *ngFor="let auto of autos"
+    >
+      <div
+        class="card"
+        style="width: 50em"
+        [ngClass]="{
+          'bg-success': auto.available,
+          'bg-danger': !auto.available
+        }"
+      >
+        <img
+          src="{{ auto.modelImage }}"
+          class="card-img-top"
+          alt="{{ auto.brand }} {{ auto.model }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title h2">{{ auto.brand }} {{ auto.model }}</h5>
+          <p class="card-text h4">
+            <span class="badge me-1 text-uppercase">Anno: {{ auto.year }}</span>
+            <span class="badge me-1 text-uppercase"
+              >Prezzo: {{ auto.price }}</span
+            >
+            <span
+              *ngIf="auto.available; else elseSpan"
+              class="badge me-1 text-uppercase"
+              >Pronta consegna: sì</span
+            >
+            <ng-template #elseSpan>
+              <span class="badge me-1 text-uppercase">Pronta consegna: no</span>
+            </ng-template>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
