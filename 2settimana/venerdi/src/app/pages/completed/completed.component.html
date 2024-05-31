@@ -1,0 +1,18 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Users</th>
+        <th>Tasks Completed</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let task of MyArray">
+      <tr *ngIf="task.completed">
+        <td class="users-name">
+          {{ task.user?.firstName }} {{ task.user?.lastName }}
+        </td>
+        <td>{{ task.todo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

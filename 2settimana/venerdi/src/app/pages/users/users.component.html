@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Users</th>
+              <th>Tasks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let task of usersTasks">
+              <td>
+                <img [src]="task.image" class="user-image" alt="User Image" />
+              </td>
+              <td>
+                {{ task.firstName }} {{ task.lastName }} - {{ task.title }}
+              </td>
+              <td>
+                <ul>
+                  <li *ngFor="let todos of task.todo1">{{ todos.todo }}</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

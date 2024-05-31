@@ -1,0 +1,42 @@
+<div class="container">
+  <app-home></app-home>
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Tasks</th>
+        <th>Users</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let task of myArray">
+      <tr>
+        <th>
+          <input
+            type="checkbox"
+            [(ngModel)]="task.completed"
+            (ngModelChange)="addTask(task)"
+          />
+        </th>
+        <td
+          [ngStyle]="{
+            'text-decoration': task.completed ? 'none' : 'line-through'
+          }"
+        >
+          {{ task.todo }}
+        </td>
+        <!--<td
+          [ngClass]="{
+            'bg-success': task.completed,
+            'bg-danger': !task.completed
+          }"
+        >
+          {{ task.todo }}
+        </td> avevo fatto in questo modo, ma era effetivamente inguardabile-->
+        <td>
+          {{ task.user?.firstName }} {{ task.user?.lastName }} -
+          {{ task.user?.title }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
