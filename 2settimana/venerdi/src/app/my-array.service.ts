@@ -19,6 +19,8 @@ export class MyArrayService {
 
   usersTasks: iUsersTask[] = [];
 
+  users: iUsers[] = [];
+
   //Ottengo tutte le tasks e gli users
   getAllTasksAndUsers(): iMyArray[] {
     return this.todoService.todo1.map((todo: iTodo) => {

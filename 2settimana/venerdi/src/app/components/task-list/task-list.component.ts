@@ -19,6 +19,6 @@ export class TaskListComponent {
   }
 
   addTask(task: any) {
-    console.log(`id ${task.id}, completed ${task.completed}`);
+    console.log(`id: ${task.id}, completed: ${task.completed}`);
   }
 }
