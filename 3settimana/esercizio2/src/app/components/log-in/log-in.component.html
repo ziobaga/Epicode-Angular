@@ -1,23 +1,32 @@
 <div class="container mt-4">
-  <form>
-    <div class="mb-3">
+  <form [formGroup]="form">
+    <div class="mb-3 form-group">
       <label class="form-label">Nome</label>
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" formControlName="nome" />
+      <span *ngIf="form.get('nome')?.invalid">Inserisci il nome</span>
     </div>
-    <div class="mb-3">
+    <div class="mb-3 form-group">
       <label class="form-label">Cognome</label>
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" formControlName="cognome" />
     </div>
-    <div class="mb-3">
+    <div class="mb-3 form-group">
       <label class="form-label">Password</label>
-      <input type="password" class="form-control" />
+      <input type="password" class="form-control" formControlName="password" />
     </div>
-    <div class="mb-3">
+    <div class="mb-3 form-group">
       <label class="form-label">Conferma Password</label>
-      <input type="password" class="form-control" />
+      <input
+        type="password"
+        class="form-control"
+        formControlName="confermaPassword"
+      />
     </div>
-    <div class="mb-3">
-      <select class="form-select" aria-label="Default select example">
+    <div class="mb-3 form-group">
+      <select
+        class="form-select"
+        aria-label="Default select example"
+        formControlName="genere"
+      >
         <option selected>Scegli il tuo genere</option>
         <option value="uomo">Uomo</option>
         <option value="donna">Donna</option>
@@ -26,7 +35,12 @@
     </div>
 
     <div class="input-group mb-3">
-      <input type="file" class="form-control" id="inputGroupFile02" />
+      <input
+        type="file"
+        class="form-control"
+        id="inputGroupFile02"
+        formControlName="file"
+      />
       <label class="input-group-text" for="inputGroupFile02">Carica</label>
     </div>
     <div class="form-floating mb-3">
@@ -34,14 +48,17 @@
         class="form-control"
         placeholder="Leave a comment here"
         id="floatingTextarea"
+        formControlName="biografia"
       ></textarea>
       <label for="floatingTextarea">La tua biografia</label>
     </div>
     <div class="mb-3">
       <label class="form-label">Username</label>
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" formControlName="username" />
     </div>
 
-    <button type="submit" class="btn btn-primary">Iscriviti</button>
+    <button type="submit" class="btn btn-primary" (click)="invia()">
+      Iscriviti
+    </button>
   </form>
 </div>
