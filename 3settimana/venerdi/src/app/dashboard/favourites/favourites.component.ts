@@ -9,6 +9,7 @@ import { iMovies } from '../../interfaces/movies';
 })
 export class FavouritesComponent implements OnInit {
   favs!: iMovies[];
+
   constructor(public prdSrv: MoviesService) {}
 
   ngOnInit(): void {

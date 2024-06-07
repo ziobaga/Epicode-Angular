@@ -90,6 +90,34 @@
       "name": "anna",
       "surname": "fra",
       "id": 13
+    },
+    {
+      "email": "mario@ro.it",
+      "password": "$2a$10$mxHidZsidfHIRJSSho4Sn.RF4uEML5LREqUnwkCRA9vc8.pbsRtEG",
+      "name": "Mario",
+      "surname": "Rossi",
+      "id": 14
+    },
+    {
+      "email": "aled@dd.it",
+      "password": "$2a$10$3ManDW8W7XUUnkeZR.5TFu7oD.B4jPXcOJpR8u1YzFcIhg0exxZjG",
+      "name": "Antonio",
+      "surname": "aled",
+      "id": 15
+    },
+    {
+      "email": "re@hi.com",
+      "password": "$2a$10$JOFJwcSGxV/JMiOSMNxCrOYwKytmRSr07KmWcRdh.Ndl8RA9QrXlK",
+      "name": "eterere",
+      "surname": "dgygfdygfdsf",
+      "id": 16
+    },
+    {
+      "email": "se@gi.it",
+      "password": "$2a$10$5MqcB.38RgL3HVubHveGL..GdgoSPHL3LxStxyjRYrCF0N84LzUTe",
+      "name": "eee",
+      "surname": "yyy",
+      "id": 17
     }
   ],
   "movies-popular": [
