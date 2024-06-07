@@ -83,6 +83,13 @@
       "name": "Marco",
       "surname": "Anna",
       "id": 12
+    },
+    {
+      "email": "aaa@gmoo.it",
+      "password": "$2a$10$rljiuwXiivZR4.0wj5uAX.U6XQbxFmFktvkMXI1uv7R0dkcwegPgS",
+      "name": "anna",
+      "surname": "fra",
+      "id": 13
     }
   ],
   "movies-popular": [
