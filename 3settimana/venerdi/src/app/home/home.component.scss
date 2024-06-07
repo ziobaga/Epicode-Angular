@@ -1,0 +1,9 @@
+.testo-centrale {
+  border-right: solid 1px black;
+}
+
+@media (max-width: 992px) {
+  .testo-centrale {
+    border-right: none;
+  }
+}

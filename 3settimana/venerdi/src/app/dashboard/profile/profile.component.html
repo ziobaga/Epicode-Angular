@@ -1,0 +1,80 @@
+<div class="container light-style flex-grow-1 container-p-y">
+  <h4 class="font-weight-bold py-3 mb-4">Profilo</h4>
+
+  <div class="card">
+    <div class="row no-gutters row-bordered row-border-light">
+      <div class="col-md-9">
+        <div class="tab-content">
+          <div class="tab-pane fade active show">
+            <div class="card-body media align-items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+                alt="ok"
+                class="d-block ui-w-80 mb-1"
+                style="width: 100px"
+              />
+            </div>
+            <hr class="border-light m-0" />
+
+            <div class="card-body">
+              <div class="form-group">
+                <label class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control mb-1"
+                  value="{{ user?.name }}"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="{{ user?.name }}"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">E-mail</label>
+                <input
+                  type="text"
+                  class="form-control mb-1"
+                  value="{{ user?.email }}"
+                />
+                <div class="alert alert-warning mt-3">
+                  La tua email non è stata confermata. Controlla nella tua
+                  casella!<br />
+                  <a href="javascript:void(0)">Rimanda conferma</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-right mt-3">
+    <button type="button" class="btn btn-primary">Salva</button>&nbsp;
+    <button type="button" class="btn btn-danger">Cancella</button>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h2>Lista Utenti</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Abbonamento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td>{{ u.name }}</td>
+        <td>{{ u.email }}</td>
+        <td>Annuale</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

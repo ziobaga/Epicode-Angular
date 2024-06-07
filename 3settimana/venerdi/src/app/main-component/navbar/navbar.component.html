@@ -1,0 +1,98 @@
+<div class="bg-dark py-2">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    >
+      <ul
+        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+      >
+        <li>
+          <a
+            routerLink="/dashboard"
+            routerLinkActive="active"
+            class="nav-link px-2 text-secondary"
+            *ngIf="isUserLoggedIn"
+            >BagaFilmUp</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            class="nav-link px-2 text-secondary"
+            *ngIf="!isUserLoggedIn"
+            >BagaFilmUp</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/dashboard/favourites"
+            class="nav-link px-2 text-white"
+            *ngIf="isUserLoggedIn"
+            >Preferiti</a
+          >
+        </li>
+
+        <li>
+          <a
+            routerLink="/dashboard/movies"
+            class="nav-link px-2 text-white"
+            *ngIf="isUserLoggedIn"
+            >Films</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/dashboard/add-movies"
+            class="nav-link px-2 text-white"
+            *ngIf="isUserLoggedIn"
+            >Aggiungi film</a
+          >
+        </li>
+      </ul>
+
+      <div class="text-end">
+        <button
+          type="button"
+          routerLink="/auth/login"
+          class="btn btn-outline-light me-2"
+          *ngIf="!isUserLoggedIn"
+        >
+          Accedi
+        </button>
+        <button
+          type="button"
+          routerLink="/auth/register"
+          class="btn btn-light"
+          *ngIf="!isUserLoggedIn"
+        >
+          Registrati
+        </button>
+        <div class="row" *ngIf="isUserLoggedIn">
+          <div class="col">
+            <div ngbDropdown class="d-inline-block">
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button
+                  class="btn btn-light btn-sm ms-3"
+                  ngbDropdownItem
+                  routerLink="/dashboard/profile"
+                >
+                  Profilo
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm ms-3"
+                  (click)="logout()"
+                  *ngIf="isUserLoggedIn"
+                >
+                  Esci
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

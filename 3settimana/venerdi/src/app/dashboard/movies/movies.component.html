@@ -1,0 +1,58 @@
+<div class="container my-3">
+  <span class="display-5 fw-bold">I Titoli più visti</span>
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th>Copertina</th>
+
+        <th>Titolo</th>
+        <th>Descrizione</th>
+        <th>Durata</th>
+
+        <th>Azioni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>
+          <img [src]="movie.image" alt="" style="width: 200px; height: 200px" />
+        </td>
+
+        <td class="fw-bold">{{ movie.title }}</td>
+        <td>{{ movie.description }}</td>
+        <td>
+          <small>{{ movie.duration }}</small>
+        </td>
+
+        <td>
+          <div class="d-flex flex-column gap-3">
+            <button
+              (click)="addToFavs(movie)"
+              [disabled]="isFav(movie.id)"
+              class="btn btn-info btn-sm"
+            >
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-heart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                />
+              </svg>
+            </button>
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="deleteMovie(movie.id)"
+            >
+              Elimina
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,67 @@
+<div class="container">
+  <h1>Benvenuto {{ user?.name }}</h1>
+</div>
+
+<div class="container col-xxl-8 px-4">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6 immagine-dash">
+      <img
+        src="https://media.istockphoto.com/id/1642381175/vector/cinema.jpg?s=612x612&w=0&k=20&c=owIct55daWlWRwPbTYLI9Y1IsrgYiqJcpvvgycvxBhE="
+        class="d-block mx-lg-auto img-fluid"
+        alt="Bootstrap Themes"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="col-lg-6 testo-centrale-dashboard">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        Guarda i nostri fantastici film!
+      </h1>
+
+      <p class="lead">
+        Naviga tra le nostre categorie, scegli il film perfetto per la serata e
+        lasciati trasportare in mondi lontani, avventure mozzafiato e storie che
+        ti toccano nel profondo del cuore. Inoltre, potrai accedere a recensioni
+        dettagliate, curiosità dietro le quinte, interviste esclusive e tanto
+        altro ancora per arricchire la tua esperienza cinematografica.
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button
+          type="button"
+          routerLink="/dashboard/movies"
+          class="btn btn-primary btn-lg px-4 me-md-2"
+        >
+          Films
+        </button>
+        <button
+          type="button"
+          routerLink="/dashboard/favourites"
+          class="btn btn-outline-secondary btn-lg px-4"
+        >
+          Preferiti
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <span class="display-5">I Titoli più visti</span>
+    <div class="row my-1">
+      <div class="col-6 my-2" *ngFor="let m of movies.slice(0, 4)">
+        <div class="card mb-3 h-100">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img [src]="m.image" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{ m.title }}</h5>
+                <p class="card-text">{{ m.description }}</p>
+                <p class="card-text">Durata {{ m.duration }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

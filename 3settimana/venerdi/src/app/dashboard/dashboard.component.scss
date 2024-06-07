@@ -1,0 +1,14 @@
+.testo-centrale-dashboard {
+  border-right: solid 1px black;
+}
+
+@media (max-width: 992px) {
+  .testo-centrale-dashboard {
+    border-right: none;
+  }
+}
+@media (max-width: 992px) {
+  .immagine-dash {
+    display: none;
+  }
+}

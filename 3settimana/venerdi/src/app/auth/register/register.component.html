@@ -1,0 +1,63 @@
+<div class="background-registrati p-3 py-5 vh-100">
+  <div class="container w-50">
+    <div class="form-registrati p-3">
+      <form class="m-2">
+        <h1 class="h3 my-3 fw-normal text-center">Registrazione</h1>
+        <div class="form-floating mb-3 mx-auto">
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="registerData.name"
+            id="floatingInputName"
+            placeholder="name"
+            name="name"
+          />
+          <label for="floatingInputName">Nome</label>
+        </div>
+
+        <div class="form-floating mb-3 mx-auto">
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="registerData.surname"
+            id="floatingInputSurname"
+            placeholder="surname"
+            name="surname"
+          />
+          <label for="floatingInputSurname">Cognome</label>
+        </div>
+
+        <div class="form-floating mb-3 mx-auto">
+          <input
+            type="email"
+            class="form-control"
+            [(ngModel)]="registerData.email"
+            id="floatingInputEmail"
+            placeholder="name@example.com"
+            name="email"
+          />
+          <label for="floatingInputEmail">Email</label>
+        </div>
+
+        <div class="form-floating mb-3 mx-auto">
+          <input
+            type="password"
+            class="form-control"
+            [(ngModel)]="registerData.password"
+            id="floatingPassword"
+            placeholder="Password"
+            name="password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="mt-4 mx-auto w-50 text-center">
+          <button class="btn btn-primary py-2" (click)="signUp()" type="submit">
+            Registrati
+          </button>
+        </div>
+        <p class="mt-5 mb-3 text-body-secondary text-center">© BagaFilmUp</p>
+      </form>
+    </div>
+  </div>
+</div>

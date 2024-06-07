@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "email": "ffffffff@hkhkhk.it",
+      "password": "$2a$10$JDWSXKLVYo/hnvpiKbRP1.ajcZPN9R5zENWqwvO8u5bG.mQjfs2.a",
+      "name": "Marco",
+      "surname": "Carta",
+      "id": 1
+    },
+    {
+      "email": "enzo@gg.it",
+      "password": "$2a$10$Npry28wSsnHjv2jVzkzo1e9n/.ogRMoa8.rtHSOEHHb5AJxxyJ.Ce",
+      "name": "Giovanni",
+      "surname": "Enzo",
+      "id": 2
+    },
+    {
+      "email": "ott@hh.it",
+      "password": "$2a$10$1EAK5D5TaLCoYbmPJsRBBeqwgiPiKPKdpAM0saRQlVXSEkB2OhgH2",
+      "name": "Stefano",
+      "surname": "Ottavio",
+      "id": 3
+    },
+    {
+      "email": "fren@hou.it",
+      "password": "$2a$10$rR8owdin6u3tiw7NptWwNulb4r3CTvBhELs95JABuSe.CD5mhIcau",
+      "name": "Angelo",
+      "surname": "Freni",
+      "id": 4
+    },
+    {
+      "email": "rrrr@ookk.it",
+      "password": "$2a$10$7fqTYMTCqVrHTYAenl67ue5136HfkyeApG50gnwOC1XxyWpRKET3m",
+      "name": "reeee",
+      "surname": "erttt",
+      "id": 5
+    },
+    {
+      "email": "tre@oo.it",
+      "password": "$2a$10$VlCFLQ8CeQS6EwHobsk/senMkd0kJgTxibBHZe/.NZttblDey.RHC",
+      "name": "pippo",
+      "surname": "derre",
+      "id": 6
+    },
+    {
+      "email": "hfhf@ghfjh",
+      "password": "$2a$10$oiJPtf.dyOet7zPF/xPjbOS09KhJ8P8ZBe9xn1JiPtat4uqxTiDzy",
+      "name": "uiyig",
+      "surname": "gigki",
+      "id": 7
+    },
+    {
+      "email": "fhfhh@hkgjh.it",
+      "password": "$2a$10$kf26mey7U0S6mLvEu4egBuSBRgMgTdnzXMJuCU75zRGBwrAQDaTae",
+      "name": "huidhguhdugh",
+      "surname": "ssgfsgfygdsyuf",
+      "id": 8
+    },
+    {
+      "email": "fdfdf@kk.it",
+      "password": "$2a$10$2X0ZUPRXwrDlrtsCG3v10.rEx3/ToZBtKbvc4HXAPxSL9nVRa4Rgi",
+      "name": "Antonio",
+      "surname": "grggfg",
+      "id": 9
+    },
+    {
+      "email": "segg@ggh.it",
+      "password": "$2a$10$KgS/OpgihFFKahfTCObCZ.YzjE3xAy65HxD9ElcWZueYCl3Z5O0j6",
+      "name": "Antonio",
+      "surname": "xsdsf",
+      "id": 10
+    },
+    {
+      "email": "hhhh.@hoo.it",
+      "password": "$2a$10$Srok56Tm.mmyMyVXNOkGoeC14wONiKokwD6wjDNzLHtoNPGPGWi8m",
+      "name": "Andrea",
+      "surname": "gggg",
+      "id": 11
+    },
+    {
+      "email": "anna@gm.it",
+      "password": "$2a$10$ESQfS6oidHAKn9PpC2uSvOyWBToeVfLXKQOL3EyOlua1wFIsMMh92",
+      "name": "Marco",
+      "surname": "Anna",
+      "id": 12
+    }
+  ],
+  "movies-popular": [
+    {
+      "id": 1,
+      "title": "Fight Club",
+      "description": "Film stupendo!",
+      "image": "https://m.media-amazon.com/images/I/71YFxhhSRPL._AC_UF1000,1000_QL80_.jpg",
+      "duration": "2h 19min"
+    },
+    {
+      "id": 2,
+      "title": "The Dark Knight",
+      "description": "Bellissimo",
+      "image": "https://m.media-amazon.com/images/I/91KkWf50SoL._AC_UF1000,1000_QL80_.jpg",
+      "duration": "2h 10min"
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "description": "Bello",
+      "image": "https://mr.comingsoon.it/imgdb/locandine/big/47397.jpg",
+      "duration": "2h 10min"
+    },
+    {
+      "id": 4,
+      "title": "Spiderman",
+      "description": "Spettacolare",
+      "image": "https://mr.comingsoon.it/imgdb/locandine/big/1058.jpg",
+      "duration": "1h 58min"
+    },
+    {
+      "id": 5,
+      "title": "Avatar",
+      "description": "Gran film",
+      "image": "https://mr.comingsoon.it/imgdb/locandine/big/846.jpg",
+      "duration": "2h 10min"
+    },
+    {
+      "id": 6,
+      "title": "Pulp Fiction",
+      "description": "Emozionante",
+      "image": "https://m.media-amazon.com/images/I/714c7OWMiYL._AC_UF1000,1000_QL80_.jpg",
+      "duration": "2h 34"
+    }
+  ]
+}
